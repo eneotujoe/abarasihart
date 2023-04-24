@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+let links = [
+	{
+		url:'',
+		title: 'Lorem ipsum dolor sit amet consectetur',
+		text: 'Lorem ipsum minima fugit quae perspiciatis atque sapiente recusandae? Quasi quod debitis eius laboriosam eaque accusamus sequi ab id eum. Voluptate obcaecati molestiae, id quas veritatis autem non explicabo similique suscipit'
+	},
+	{
+		url:'',
+		title: 'Lorem ipsum dolor sit amet consectetur',
+		text: 'Lorem ipsum minima fugit quae perspiciatis atque sapiente recusandae? Quasi quod debitis eius laboriosam eaque accusamus sequi ab id eum. Voluptate obcaecati molestiae, id quas veritatis autem non explicabo similique suscipit'
+	},
+	{
+		url:'',
+		title: 'Lorem ipsum dolor sit amet consectetur',
+		text: 'Lorem ipsum minima fugit quae perspiciatis atque sapiente recusandae? Quasi quod debitis eius laboriosam eaque accusamus sequi ab id eum. Voluptate obcaecati molestiae, id quas veritatis autem non explicabo similique suscipit'
+	},
+	{
+		url:'',
+		title: 'Lorem ipsum dolor sit amet consectetur',
+		text: 'Lorem ipsum minima fugit quae perspiciatis atque sapiente recusandae? Quasi quod debitis eius laboriosam eaque accusamus sequi ab id eum. Voluptate obcaecati molestiae, id quas veritatis autem non explicabo similique suscipit'
+	},
+]
+
+const pageTitle = 'Publications'
+const description = 'My publications'
+---
+
+<BaseLayout title={pageTitle} description={description}>
+	<div class="container mx-auto my-5">
+		<div class="grid grid-cols-1">
+			<div class="card bg-neutral shadow-xl text-center">
+				<div class="card-body items-center text-center">
+					<h2 class="font-black text-4xl">{ pageTitle }</h2>
+				</div>
+			</div>
+		</div>
+	
+		<div class="grid md:grid-cols-4 grid-cols-1 gap-4 my-4">
+			
+			{links.map(({url, title, text}) => (
+				<div class="card bg-neutral shadow-xl">
+					<a href={url} >
+						<div class="card-body">
+							<h1 class="text-xl font-semibold">{title}</h1>
+							<p>{text}</p>
+						</div>
+					</a>
+				</div>
+			))}
+		</div>
+	</div>
+</BaseLayout>

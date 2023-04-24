@@ -1,0 +1,10 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+import { SITE_TITLE } from '../../consts';
+---
+<footer class="footer footer-center py-20 bg-neutral text-primary rounded">
+  <SocialLinks />
+  <div>
+    <p>&copy; { new Date().getFullYear() } | { SITE_TITLE }</p>
+  </div>
+</footer>

@@ -1,0 +1,30 @@
+---
+import { Picture } from '@astrojs/image/components';
+import { SITE_TITLE, NAV_ITEMS } from '../../consts';
+import ThemeButton from '../components/ThemeButton.astro'
+
+---
+<header>
+  <nav class="navbar bg-primary text text-secondary">
+    <div class="navbar-start z-10 pl-3">
+      <a href="/">
+        <figure class="w-36">
+          <Picture src="/hart-logo.png" alt="logo" widths={[40, 80, 200]}  aspectRatio="4:1" />
+        </figure>
+      </a>
+    </div>
+    
+    <div class="navbar-end md:flex hidden z-10 pr-10">
+      {NAV_ITEMS.map(([title, url]) => (
+        <a href={url} class="btn btn-ghost upper-case">{title}</a>
+      ))}
+    </div>
+
+    <div class="navbar-end md:hidden z-10 px-3">
+      <label for="my-drawer-4" class="drawer-button btn btn-secondary btn-outline">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+      </label>
+    </div>
+
+  </nav>
+</header>
