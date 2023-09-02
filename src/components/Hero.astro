@@ -6,11 +6,16 @@ import { Picture } from '@astrojs/image/components';
 <div class="hero min-h-screen" style="background-image: url('/bg.png');">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
-    <div class="flex flex-col justify-center mt-3">
-      <h1
-        class="md:text-6xl text-5xl text-primary font-black my-5"
-      >
-      Abarasi Hart (PhD)
+    <div class="flex flex-col items-center mt-3">
+
+      <div class="avatar">
+        <div class="w-80 rounded-full">
+          <Picture src="/hart-logo.png" alt="profile photo" widths={[400, 800, 1200]} aspectRatio="1:1" />
+        </div>
+      </div>
+
+      <h1 class="md:text-6xl text-5xl text-primary font-black my-5">
+        Abarasi Hart (PhD)
       </h1>
       <button class="btn btn-primary btn-outline font-thin">Contact Me</button>
     </div>
