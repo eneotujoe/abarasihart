@@ -1,23 +1,25 @@
 ---
 import { Picture } from '@astrojs/image/components';
+import SocialLinks from "./SocialLinks.astro";
 
 ---
 
-<div class="hero min-h-screen" style="background-image: url('/bg.png');">
-  <div class="hero-overlay bg-opacity-60"></div>
+<div class="hero min-h-screen -mt-16" style="background-image: linear-gradient(to right top, #0900b1, #80008a, #a30061, #af003e, #ad0023, #b13416, #b15107, #ae6900, #b28900, #a7ad00, #85d200, #00f615);">
+  <div class="hero-overlay bg-opacity-10"></div>
   <div class="hero-content text-center text-neutral-content">
     <div class="flex flex-col items-center mt-3">
 
       <div class="avatar">
         <div class="w-80 rounded-full">
-          <Picture src="/hart-logo.png" alt="profile photo" widths={[400, 800, 1200]} aspectRatio="1:1" />
+          <Picture src="/hart.png" alt="profile photo" widths={[400, 800, 1200]} aspectRatio="1:1" />
         </div>
       </div>
 
-      <h1 class="md:text-6xl text-5xl text-primary font-black my-5">
+      <h1 class="md:text-6xl text-5xl text-secondary font-black mb-5">
         Abarasi Hart (PhD)
       </h1>
-      <button class="btn btn-primary btn-outline font-thin">Contact Me</button>
+      <button class="btn btn-secondary btn-outline font-thin my-10">Contact Me</button>
+      <SocialLinks />
     </div>
   </div>
 </div>
