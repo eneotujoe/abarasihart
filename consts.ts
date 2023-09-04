@@ -3,5 +3,6 @@ export const SITE_DESCRIPTION = 'Dr Abarasi Abbey-Hart is a multidisciplinary re
 export const NAV_ITEMS = [
   ['Home', '/'],
   ['Publication', '/publication'],
+  ['Services', '/services'],
   ['About', '/about'],
 ]

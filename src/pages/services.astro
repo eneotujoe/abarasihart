@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/Footer.astro';
+const title = 'Consulting Services'
+const description = 'Consulting Services Done By Dr Abarasi Abbey-Hart'
+---
+
+<BaseLayout title={title} description={description}>
+	<div class="container mx-auto my-5">
+		<div class="grid grid-cols-1">
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body items-center text-center">
+					<h1 class="font-black text-4xl">{ title }</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid md:grid-cols-2 grid-cols-1 gap-4 my-4">
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Catalyst Design and Engineering for clean fuel, sustainable chemicals, pollution and waste control.</h1>
+				</div>
+			</div>
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Enhanced Oil Recovery, Heavy Oil Upgrading, and Bitumen Extraction.</h1>
+				</div>
+			</div>
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Resource recovery from waste. Valorisation of waste such as biomass, bio-waste, e-waste, plastics, waste shells and bones for energy carriers, biomaterials, catalyst, adsorbent, and chemicals.						</h1>
+				</div>
+			</div>
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Biomass Conversion Technologies, Bioenergy, and Bioproducts.</h1>
+				</div>
+			</div>
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Battery Electrode Processing.</h1>
+				</div>
+			</div>
+			<div class="card card-bordered border-sky-300">
+				<div class="card-body prose prose-lg prose-p:text-blue-600 text-justify">
+					<h1 class="text-xl">Remediation of crude oil contaminated land.</h1>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<Footer />
+</BaseLayout>
